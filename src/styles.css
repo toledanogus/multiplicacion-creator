@@ -1,0 +1,13 @@
+body{
+    background-color: beige;
+}
+table{
+    text-align: right;
+    font-size: 30px;
+}
+.resultado{
+    border-bottom: 1px solid rgb(239, 24, 24)
+}
+span{
+    color: rgb(239, 24, 24)
+}
