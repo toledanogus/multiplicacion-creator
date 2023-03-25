@@ -1,5 +1,7 @@
 body{
-    background-color: beige;
+    background-color: rgb(189, 247, 223);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 table{
     text-align: right;
@@ -10,4 +12,21 @@ table{
 }
 span{
     color: rgb(239, 24, 24)
+}
+td {
+    white-space: nowrap;
+  }
+  
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div{
+    margin-bottom: 10px
+}
+.negrita{
+    font-weight:bold;
+}
+h2{
+    text-shadow: 2px 2px 4px rgb(106, 104, 104) ;
 }

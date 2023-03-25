@@ -19,20 +19,27 @@ export const Menu = (props) => {
         props.enviarPropiedadAlPadre(inputV);
     }
 
-    
+
 
     return (
         <>
-            <h2>Menu</h2>
+        
+            
             <div>Elige la cantidad de multiplicaciones que deseas crear:</div>
             <form onSubmit={getValor} >
+                
+                <div className="form-group">
                 <input
+                    className="form-control"
                     type="number"
                     value={inputV}
                     onChange={onInputChange} />
-                <button>Crear</button>
-
-            </form>
+                    
+                <button className='btn btn-primary'>Crear</button>
+            </div>
+            <hr />
+            
+        </form>
             
         </>
     )

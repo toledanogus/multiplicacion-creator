@@ -18,6 +18,7 @@ const [numMul, setNumMul] = useState(1);
     return (
         <>
             <h2>Creador de multiplicaciones Gus</h2>
+            <hr />
             <Menu enviarPropiedadAlPadre={recibirPropiedadDelHijo} />
             <Resultado numeroDeMul={numMul} />
 

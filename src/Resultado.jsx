@@ -19,19 +19,13 @@ export const Resultado = (props) => {
         setArr1(new Array(multi).fill().map(() => Math.floor(Math.random() * 90) + 10));
         setArr2(new Array(multi).fill().map(() => Math.floor(Math.random() * 90) + 10));
         setOculto(true);
-        // let numx = arr1[0]
-        // const unidades = parseInt(numx.toString().charAt(numx.toString().length - 1));
-        // const decenas = parseInt(numx.toString().slice(-2, -1));
-        // console.log(numx, unidades, decenas)
-
-
     }, [props.numeroDeMul])
 
     return (
 
         <>
             <button className='btn btn-success' onClick={verResultados}>Ver resultados</button>
-            <h2>Resultado</h2>
+            <h2>Multiplicaciones</h2>
 
             <table>
                 <tbody>
@@ -87,7 +81,7 @@ export const Resultado = (props) => {
                                 <React.Fragment key={i}>
                                     <td>&nbsp;&nbsp;&nbsp;</td>
                                     <td>&nbsp;&nbsp;&nbsp;</td>
-                                    <td hidden={oculto}>{arr1[i] * arr2[i]}</td></React.Fragment>
+                                    <td hidden={oculto} className="negrita">{arr1[i] * arr2[i]}</td></React.Fragment>
                             ))
 
                         }
